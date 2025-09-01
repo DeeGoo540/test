@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>チュートリアル</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p id ="top">これは初めてチュートリアルです。</p>
+    <h1>犬</h1>
+    <p><mark>四足歩行</mark>。「ワン」と鳴く。</p>
+
+    <h2><small>レトリバー</small></h2>
+
+    <hr>
+
+    <h3>ラブラドールレトリバー</h3>
+    <p>四足歩行。「バウ」と鳴く。</p>
+
+    <h3>ゴールデンレトリバー</h3>
+    <p>四足歩行。「にゃー」と鳴く。</p>
+
+    <a href="https://www.pref.mie.lg.jp/" target="_blank">三重県</a>
+
+    <ul>
+        <li>猫</li>
+        <li>犬</li>
+        <li>鳥</li>
+    </ul>
+    <ol>
+        <li>猫</li>
+        <li>犬</li>
+        <li>鳥</li>
+    </ol>
+
+    <dl>
+        <dt>猫</dt>
+        <dd>四足歩行。「にゃー」と鳴く。</dd>
+        <dt>犬</dt>
+        <dd>四足歩行。「ワン」と鳴く。</dd>
+        <dt>鳥</dt>
+        <dd>二足歩行。「チュンチュン」と鳴く。</dd>
+    </dl>
+
+    <table border="1">
+        <tr>
+            <th>名前</th>
+            <th>年齢</th>
+            <th>性別</th>
+        </tr>
+        <tr>
+            <td>山田太郎</td>
+            <td colspan="2">20</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>山田花子</td>
+            <td>18</td>
+            <td>女</td>
+        </tr>
+    </table>
+
+    <p>
+        GitHub<br>
+        <img src="../images/github.jpeg" width="20"><br>
+        Git
+        <br>
+    </p>
+
+    <img src="../images/github.jpeg" width="100" height="100"><br>
+
+    <video muded controls width="600">
+        <source src="../images/java_movie.mp4" type="video/mp4">
+        <p>お使いのブラウザはvideoタグに対応していません。</p>
+    </video>
+
+    <br>
+    <label>
+        名前：<input name="name">
+        <button>送信</button>
+    </label>
+
+    <form id="form-no-id" action="" method="get">
+        <label>名前：<input disabled></label>
+    </form>
+    <button form="form-no-id">送信</button>
+    <br>
+
+    <label>
+        提出日：<input type="date">
+        パスワード：<input type="password">
+    </label>
+    <br>
+
+    <table border="1">
+        <tr>
+            <td><label for="name">氏名</label></td>
+            <td><input id="name" required></td>
+        </tr>
+    </table>
+    <button type="submit">送信</button>
+    <button type="reset">クリア</button>
+    <button type="button">ボタン</button>
+    <br>
+
+    <label>
+        <br>備考：<br>
+        <textarea cols="100" rows="5" maxlength="250"></textarea>
+    </label>
+
+    <br>
+    <form action="" method="get">
+        <label><input type="radio" name="servant" value="dog">犬</label>
+        <label><input type="radio" name="servant">猿</label>
+        <label><input type="radio" name="servant">雉</label>
+        <button>送信</button>
+    </form>
+
+    <br>
+    <label><input type="checkbox">犬</label>
+    <label><input type="checkbox">猿</label>
+    <label><input type="checkbox">雉</label>
+
+    <br>
+    <select>
+        <option>犬</option>
+        <option>猿</option>
+        <option>雉</option>
+    </select>
+
+    <br>
+    <label for="tbox">手土産にする玉手箱を選んでください。</label><br>
+    <select id="tbox" multiple>
+        <option>玉手箱（大）</option>
+        <option>玉手箱（中）</option>
+        <option>玉手箱（小）</option>
+    </select>
+
+    <br>
+    <!-- ページトップはhref属性を指定しなくてもよい-->
+    <a href="#top">トップへ戻る</a>
+
+</body>
+</html>
