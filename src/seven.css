@@ -1,0 +1,74 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  padding-bottom: 5rem;
+}
+
+.red {
+  background-color: mistyrose;
+}
+
+.blue {
+  background-color: paleturquoise;
+  padding: 2rem;
+}
+
+.petitblue {
+  background-color: lightcyan;
+  margin: 2rem;
+}
+
+.yellow {
+  background-color: moccasin;
+}
+
+div {
+  margin: 2rem 0; /* 追加 */
+  padding: 1rem;
+  /*text-align: center;*/
+}
+
+div.blue {
+  text-align: center;
+}
+
+/* 追加： 揃えたい子要素（ブロック要素） */
+div.petitblue {
+  width: 50%;
+  margin-right: auto; /* 追加 */
+  margin-left: auto;  /* 追加 ，中央揃え*/
+}
+
+span {
+  /*width: 10rem;  無効 
+  height: 10rem;  無効 
+  padding: 0 1rem;
+  margin: 0 2rem;*/
+
+}
+
+/* 追加： 親要素（ブロック要素） */
+#parent-block {
+  background-color: yellowgreen;
+  text-align: center;
+}
+
+/* 追加： 揃えたい子要素（インラインブロック要素） */
+.inline-block {
+  display: inline-block;
+  width: 10rem;
+  /*text-align: center; */
+}
+
+button {
+  width: 15rem;
+  height: 4rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+h3 {
+  text-align: center;
+}
