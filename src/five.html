@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>疑似要素と疑似クラス</title>
+    <link href="./fiv.css" rel="stylesheet" />
+    <style>
+      /* ここの内容の一部は後のチャプターで学びます */
+      form {
+        border: solid gray;
+        margin-bottom: 2rem;
+        padding: 1rem;
+      }
+      #family {
+        margin-bottom: 2rem;
+      }
+      #yamada {
+        background-color: azure;
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>セレクターの表現</h1>
+
+    <h2 class="abc">abcクラスの見出し</h2>
+    <p class="abc">
+      abcクラスの段落。abcクラスの段落。abcクラスの段落。abcクラスの段落。
+      abcクラスの段落。abcクラスの段落。abcクラスの段落。abcクラスの段落。
+      abcクラスの段落。abcクラスの段落。abcクラスの段落。abcクラスの段落。
+    </p>
+
+    <h2 id="xyz">申請フォーム</h2>
+    <form>
+      <label>氏名: <input></label><br>
+      <label>Email: <input type="email"></label><br>
+      <label>電話番号: <input type="tel" required></label><br>
+      <input id="box" type="checkbox">
+      <label for="box">暇</label><br>
+      <button>申請する</button>
+    </form>
+
+    <h2>h2 見出し</h2>
+    <h3>h3 見出し</h3>
+    <h4>h4 見出し</h4>
+
+    <h2>親子3代</h2>
+    <div class="parent">
+      母です。
+      <div class="child">
+        娘です。
+        <div class="grandchild">
+          孫です。
+        </div>
+      </div>
+    </div>
+
+    <h2>家族と隣人</h2>
+    <div id="family">
+      <div class="older-brother">兄です。</div>
+      <div class="older-sister">姉です。</div>
+      <p id="haruo">三波春夫でございます</p>
+      <div class="younger-brother">弟です。</div>
+      <div class="younger-sister">妹です。</div>
+    </div>
+    <div id="yamada">となりの山田くん。</div>
+
+    <h2>孫や子たち</h2>
+    <nav>
+      <ul>
+        <li>nav要素の孫1です</a></li>
+        <li class="second">nav要素の孫2です</li>
+        <li>nav要素の孫3です</li>
+        <li>nav要素の孫4です</li>
+      </ul>
+    </nav>
+
+    <ul>
+      <li>ul要素の子1です</li>
+      <li class="second">ul要素の子2です</li>
+      <li>ul要素の子3です</li>
+      <li>ul要素の子4です</li>
+    </ul>
+
+    <h2>旅立ちとリンク</h2>
+    <ul>
+      <li><a href="https://zenn.dev/ojk">訪れたことのあるリンク</a></li>
+      <li><a href="https://ja.wikipedia.org/wiki/量子力学">訪れたことのないリンク</a></li>
+    </ul>
+
+  </body>
+</html>

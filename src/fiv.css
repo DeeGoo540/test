@@ -1,0 +1,117 @@
+:root {
+  font-size: 16px;
+}
+
+/* h2要素の1文字目を選択 */
+h2::first-letter {
+  background-color: royalblue;
+  color: white;
+}
+
+/* p要素の１行目を選択 */
+p::first-line {
+  background-color: gold;
+}
+
+/* div#family要素の子孫であるdiv要素の1文字目を選択 */
+#family div::first-letter {
+  background-color: royalblue;
+  color: white;
+}
+
+/* p要素のテキストをマウス等で選択した部分 */
+p::selection {
+  color: firebrick;
+}
+
+/* マウス等で選択した部分 */
+::selection {
+  color: green;
+}
+
+/* nav要素の子孫のli要素の前に疑似的な要素を追加 */
+nav li::before {
+  content: "あ！";
+  color: royalblue;
+  border: solid;
+}
+
+nav ul {
+  list-style-type: none; /* 箇条書きのマークを消す */
+  padding-left: 1rem;    /* 左のスペース調整 */
+}
+
+nav li::before {
+  content: url("./authentication_fill24.png"); /* 変更 */
+  vertical-align: -0.4em; /* contentの上下調整 */
+  margin-right: 0.5em;    /* contentの右側マージンの調整 */
+}
+
+/* 最初の子要素 */
+li:first-child {
+  color: firebrick; /* 赤文字 */
+}
+
+/* 最後の子要素 */
+li:last-child {
+  color: royalblue; /* 青文字 */
+}
+
+/* 3番目の子要素 */
+li:nth-child(3) {
+  background-color: gold; /* 黄背景 */
+}
+
+#family div:nth-of-type(3) {
+  background-color: gold;
+}
+
+/* マウスが重ねられたh1要素 */
+h1:hover {
+  color: firebrick;
+}
+
+/* クリック／タップされた瞬間のh1要素 */
+h1:active {
+  background-color: gold;
+}
+
+/* 訪れたことのないリンク */
+a:link {
+  color: firebrick;
+}
+
+/* 訪れたことのあるリンク */
+a:visited {
+  color: green;
+}
+
+/* 訪れてても訪れてなくても… */
+a:any-link {
+  color: royalblue;
+}
+
+/* フォーカスが当たっているinput要素 */
+input:focus {
+  color: white;
+  background-color: royalblue;
+}
+
+/* 子孫要素にフォーカスが当たっているlabel要素 */
+label:focus-within {
+  color: firebrick;
+}
+
+/* secondクラスではないli要素 */
+li:not(.second) {
+  list-style-type: circle; /* 行頭文字を ○ にする */
+}
+
+/* 「secondクラスの直後のli要素」以外のli要素 */
+li:not(.second + li) {
+  list-style-type: square; /* 行頭文字を ■ にする */
+}
+
+#family :is(.older-sister + p, .younger-brother + div)::first-letter {
+  font-size: 2rem;
+}
