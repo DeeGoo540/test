@@ -1,0 +1,47 @@
+:root {
+  font-size: 16px;
+}
+
+p {
+  background-color: greenyellow;
+  /*width: 50%;
+  height: 10em;
+  overflow: auto;*/
+
+}
+
+.red {
+  background-color: mistyrose;
+}
+
+.blue {
+  background-color: paleturquoise;
+  padding: 2em; 
+  box-sizing: border-box; /*widthにpaddingを含める*/
+}
+
+.petitblue {
+  background-color: lightcyan;
+  width: 80%; /* 追加 */
+  margin: 2em;
+
+}
+
+.yellow {
+  background-color: moccasin;
+}
+
+div {
+  margin-bottom: 2rem;
+}
+
+body {
+  width: 800px;
+}
+
+h2 {
+  border-left: solid 1em coral;
+  padding-left: 0.5em;
+  border-bottom: solid 0.1em coral;
+  width: 15em;
+}
