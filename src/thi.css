@@ -1,0 +1,82 @@
+h1 {
+  color: royalblue;
+}
+
+/* 雛形コードの <li class="keyword"> に対するスタイル */
+.keyword {
+  color: ivory;
+  background-color: royalblue;
+}
+
+/* 雛形コードの <li class="rgb"> に対するスタイル */
+.rgb {
+  color: rgb(255, 255, 255); /* 白色 */
+  background-color: rgb(255, 0, 0); /* 赤色 */
+}
+
+.hex {
+  color: #ffffff; /* 白色 */
+  background-color:  #0f0; /* 省略形の緑色 */
+  border: solid #ffa500; /* 橙色 */
+}
+
+.hsl {
+  color: hsl(60, 100%, 50%); /* 黄色 */
+  background-color: hsl(60, 100%, 25%); /* 暗い黄 */
+  border: solid hsl(240, 50%, 50%); /* くすんだ青 */
+}
+
+.opacity {
+  background-image: url("bg.png");
+  color: rgb(128, 0, 128, 0.5); /* 不透明度 0.5 */
+}
+
+.px {
+  font-size: 20px;
+}
+
+.pt {
+  font-size: 20pt;
+}
+
+.percent {
+  background-color: gold;
+  width: 50%;
+  font-size: 150%; /*デフォルトが16px*/
+}
+
+.em {
+  background-color: skyblue;
+  font-size: 8px;
+  width: 3em;  /* 8px × ３ = 24px （約３文字分） */
+}
+/*
+:root {
+  font-size: 24px;
+}
+*/
+
+/* <li class="rem"> に対するスタイル */
+.rem {
+  background-color: greenyellow;
+  font-size: 0.5rem; /* 24px × 0.5 = 12px */
+  width: 3em;  /* 24px × ３ = 72px */
+}
+
+.inherit {
+  background-color: plum;
+  /*font-size: 0.75em; どんどん小さくなる */
+  font-size: 0.75rem; /* 常に24pxの0.75倍→18px */
+}
+
+.vwh {
+  background-color: pink;
+  width: 50vw; /* ビューポートの横幅に比例 */
+  font-size: 5vh;  /* ビューポートの縦幅に比例 */
+}
+
+p {
+  background-color: skyblue;
+  width: 50vmin;
+  height: 50vmin;
+}

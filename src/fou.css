@@ -1,0 +1,80 @@
+:root {
+  font-size: 16px;
+}
+
+/* class属性を持つ要素すべて */
+/**[class] {
+  background-color: gold;
+}
+
+/* form要素の子孫要素すべて */
+/*form * {
+  color: firebrick;
+}
+
+/* abcクラスのp要素を選択 */
+p.abc {
+  color: firebrick;
+}
+
+/* こちらのほうが詳細度が高いため、優先される */
+h2#xyz {
+  color: firebrick;
+}
+
+/* 通常ならあとから書いた内容で上書きされるはずだが… */
+#xyz {
+  color: royalblue;
+}
+
+input[type="email"] {
+  background-color: beige;
+}
+
+/* h2要素とh4要素に同じスタイルを設定する */
+h2, h4 {
+  background-color: gold;
+}
+
+/* nav要素の子孫であるli要素 */
+nav li {
+  color: firebrick;
+}
+
+/* abcクラスのh2要素 */
+h2.abc {
+  color: firebrick;
+}
+
+/* h2要素の子要素のparentクラスの要素 → 存在しない */
+h2 .parent {
+  color: firebrick;
+}
+
+/* 子のdiv要素だけを選択 */
+.parent > div > div {
+  border: solid royalblue;
+}
+
+/* 「兄」と兄弟であるdiv要素すべてに適用される */
+.older-brother ~ div {
+  color: firebrick;
+}
+
+#haruo ~ div {
+  color: firebrick;
+}
+
+/* 「兄」の直後に来る「姉」にしか適用されない */
+.older-brother + div {
+  background-color: gold;
+}
+
+/* 「三波春夫」の直後に来る「弟」にしか適用されない */
+#haruo + div {
+  background-color: gold;
+}
+
+nav .second + li {
+  background-color: gold;
+}

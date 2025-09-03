@@ -1,0 +1,29 @@
+#p_id {
+  color: royalblue; /* 詳細度 強 */
+ }
+
+.p_class {
+  color: firebrick; /* 詳細度 中 */
+}
+
+p {
+  color: green; /* 詳細度 弱 */
+}
+
+ul {
+  color: firebrick;  /* 子要素であるli要素に継承される */
+}
+
+li {
+  color: royalblue; /* こちらのほうが優先度が高い */
+}
+
+.parent {
+  color: coral;
+  border: solid;
+}
+
+.child {
+  color: royalblue;
+  border: inherit; 
+}
