@@ -1,0 +1,54 @@
+:root {
+  font-size: 16px;
+}
+
+.red {
+  background-color: mistyrose;
+  grid-area: Red;
+}
+
+.blue {
+  background-color: paleturquoise;
+  grid-area: Blue;
+}
+
+.yellow {
+  background-color: moccasin;
+  grid-area: Yellow;
+}
+
+section:last-of-type :is(figure, p) {
+  margin: 0;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+    grid-template-areas:
+        "Red Yellow"
+        "Blue Yellow";
+}
+
+.container div {
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+figure {
+    text-align: center;
+    margin-bottom: 1rem;
+}
